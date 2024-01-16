@@ -41,9 +41,3 @@ drawpad.addEventListener("mousemove", function(e){
 
 drawpadCTX.sharpiePoint(20, 20);
 
-
-
-drawpadCTX.beginPath(); // Start a new path
-drawpadCTX.moveTo(30, 50); // Move the pen to (30, 50)
-drawpadCTX.lineTo(100, 100); // Draw a line to (150, 100)
-drawpadCTX.stroke(); // Render the path
