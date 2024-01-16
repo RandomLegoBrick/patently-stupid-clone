@@ -32,4 +32,5 @@ drawpad.addEventListener("mousemove", function(e){
 drawpadCTX.sharpiePoint(20, 20);
 
 drawpadCTX.fillStyle = "rgb(0, 0, 0)";
-//drawpadCTX.
+//drawpadCTX.arc(x, y, 3, 0, 360);
+drawpadCTX.fillRect(10, 10, 30, 30);
