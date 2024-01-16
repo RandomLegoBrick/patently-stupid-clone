@@ -1,8 +1,17 @@
-const express = require("express")
+const express = require("express");
+const { Server } = require("socket.io");
+const { createServer } = require("http");
 
 
 const app = express();
-var server = createServer(app);
+const server = createServer(app);
+const io = new Server(server);
+
+io.on("connection", (socket) => {
+    
+});
 
 
-server.listen(() => console.log("Were up"))
+app.use(express.static("client"));
+
+server.listen(3000, () => console.log("Were up"));
