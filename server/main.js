@@ -7,6 +7,8 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server);
 
+var players = [];
+
 io.on("connection", (socket) => {
     
 });

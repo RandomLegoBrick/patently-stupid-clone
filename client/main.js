@@ -31,11 +31,9 @@ drawpad.addEventListener("mousemove", function(e){
         drawpadCTX.strokeStyle = "rgb(0, 0, 0)"
         drawpadCTX.beginPath();
         drawpadCTX.moveTo(drawpadPoints.x, drawpadPoints.y);
-        for(var i = 0; i < drawpadPoints.length; i++) {
-            drawpadCTX.lineTo(drawpadPoints[i].x, drawpadPoints[i].y);
-            drawpadCTX.lineWidth = 3;
-            drawpadCTX.stroke();
-        }
+        drawpadCTX.lineTo(drawpadPoints[drawpadPoints.length-2].x, drawpadPoints[drawpadPoints.length-2].y);
+        drawpadCTX.lineWidth = 3;
+        drawpadCTX.stroke();
     }
 });
 
